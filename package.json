@@ -1,14 +1,14 @@
 {
-  "name": "Projekod-Downloader",
+  "name": "pkdo",
   "version": "0.0.1",
-  "description": "...",
+  "description": "Projekod Yazılım Download Manager",
   "main": "index.js",
   "scripts": {},
   "bin": {
     "pkdo": "./index.js"
   },
   "author": "Projekod Interactive",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.1",
     "commander": "^2.9.0",
