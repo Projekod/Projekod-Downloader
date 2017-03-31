@@ -1,0 +1,15 @@
+{
+  "version":"0.0.1",
+  "boxes":[
+    {
+      "name":"GulpScaffold",
+      "target":"Projekod/GulpScaffold",
+      "description":"Gulp Html Şablonu"
+    },
+    {
+      "name":"Wordpress",
+      "target":"Wordpress/Wordpress",
+      "description":"Wordpress Reposu"
+    }
+  ]
+}
