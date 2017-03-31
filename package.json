@@ -1,6 +1,6 @@
 {
   "name": "pkdo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Projekod Yazılım Download Manager",
   "main": "index.js",
   "scripts": {},
