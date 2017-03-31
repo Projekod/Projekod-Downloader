@@ -94,6 +94,7 @@ function rockNRoll(box, directory) {
 }
 
 function downloadBox(box, directory) {
+    console.log(chalk.green('Dosyanız indiriliyor lütfen bekleyin'));
     download(box.target, directory, function (err) {
         if (!err) {
             console.log(chalk.green('İndirme işlemi tamamlandı'));
