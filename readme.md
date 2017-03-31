@@ -7,6 +7,11 @@ Projekod Download Manager aka PKDO
 Projekod Yazılımın github üzerinde bulunan repolarını kolay yoldan download etmeye yarayan araç.
 komut adı `pkdo`
 
+## Kurulım şekli (global)
+
+````
+$ npm install pkdo -g
+````
 
 ## Kullanım Şekli
 
