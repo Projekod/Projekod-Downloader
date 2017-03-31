@@ -1,0 +1,23 @@
+{
+  "name": "Projekod-Downloader",
+  "version": "0.0.1",
+  "description": "...",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "pkdo": "./index.js"
+  },
+  "author": "Projekod Interactive",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "commander": "^2.9.0",
+    "download-git-repo": "^0.2.1",
+    "inquirer": "^3.0.6",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
