@@ -10,6 +10,12 @@
       "name":"Wordpress",
       "target":"Wordpress/Wordpress",
       "description":"Wordpress Reposu"
+    },
+    {
+      "name":"Wprify - Starter Theme",
+      "target":"Projkeod/Wprify",
+      "description":"Wordpress için wprify starter teması"
     }
+
   ]
 }
