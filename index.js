@@ -60,7 +60,6 @@ function main() {
         var downloadStr = answer.download;
         var keys = downloadStr.split("- ");
         var directory = answer.directory;
-        console.log(directory);
         if (keys.length > 1) {
             var key = (keys[0] - 1);
             var box = boxes[key];
