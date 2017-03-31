@@ -3,7 +3,7 @@
 var pjson = require('./package.json');
 var version = pjson.version;
 
-var download, program, exists, path, inquirer, request, chalk;
+var download, program, exists, inquirer, request, chalk;
 var boxes = [];
 var jsonUrl = 'https://raw.githubusercontent.com/Projekod/Projekod-Downloader/master/pkdofile.json';
 
@@ -11,6 +11,7 @@ request = require('request');
 chalk = require('chalk');
 inquirer = require('inquirer');
 exists = require('fs').existsSync;
+download = require('download-git-repo');
 
 request(jsonUrl, function (error, response, body) {
     if (response.statusCode !== 200) {
