@@ -1,21 +1,20 @@
 {
-  "version":"0.0.1",
-  "boxes":[
+  "version": "0.0.1",
+  "boxes": [
     {
-      "name":"GulpScaffold",
-      "target":"Projekod/GulpScaffold",
-      "description":"Gulp Html Şablonu"
+      "name": "GulpScaffold",
+      "target": "Projekod/GulpScaffold",
+      "description": "Gulp Html Şablonu"
     },
     {
-      "name":"Wordpress",
-      "target":"Wordpress/Wordpress",
-      "description":"Wordpress Reposu"
+      "name": "Wordpress",
+      "target": "Wordpress/Wordpress",
+      "description": "Wordpress Reposu"
     },
     {
-      "name":"Wprify - Starter Theme",
-      "target":"Projekod/wprify",
-      "description":"Wordpress için wprify starter teması"
+      "name": "Yunus Starter Theme",
+      "target": "Projekod/yunus-starter-theme",
+      "description": "Wordpress için yunus başlangıç teması (Gulp Config)"
     }
-
   ]
 }
