@@ -98,6 +98,8 @@ function downloadBox(box, directory) {
     download(box.target, directory, function (err) {
         if (!err) {
             console.log(chalk.green('İndirme işlemi tamamlandı'));
+        }else{
+            console.log(err);
         }
     });
 }
