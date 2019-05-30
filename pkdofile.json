@@ -12,9 +12,9 @@
       "description": "Wordpress Reposu"
     },
     {
-      "name": "Yunus Starter Theme",
-      "target": "Projekod/yunus-starter-theme",
-      "description": "Wordpress için yunus başlangıç teması (Gulp Config)"
+      "name": "Webpack Boilerplate",
+      "target": "aligundogdu/webpack-nunjucks-simple-boilerplate",
+      "description": "A simple scaffolding for Webpack, Sass, Babel, Nunjucks, Browsersync etc."
     }
   ]
 }

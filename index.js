@@ -3,7 +3,7 @@
 var pjson = require('./package.json');
 var version = pjson.version;
 
-var download, program, exists, inquirer, request, chalk;
+var exists, inquirer, request, chalk, url, http, exec, fs, rimraf;
 var boxes = [];
 var jsonUrl = 'https://raw.githubusercontent.com/Projekod/Projekod-Downloader/master/pkdofile.json';
 
@@ -11,7 +11,11 @@ request = require('request');
 chalk = require('chalk');
 inquirer = require('inquirer');
 exists = require('fs').existsSync;
-download = require('download-git-repo');
+fs = require('fs');
+url = require('url');
+http = require('http');
+exec = require('child_process').exec;
+rimraf = require("rimraf");
 
 request(jsonUrl, function (error, response, body) {
     if (response.statusCode !== 200) {
@@ -95,12 +99,14 @@ function rockNRoll(box, directory) {
 
 function downloadBox(box, directory) {
     console.log(chalk.green('Dosyanız indiriliyor lütfen bekleyin'));
-    download(box.target, directory, function (err) {
-        if (!err) {
-            console.log(chalk.green('İndirme işlemi tamamlandı'));
-        }else{
-            console.log(err);
+    exec('git clone https://github.com/' + box.target + '.git ' + directory, (err, stdout, stderr) => {
+        if (err) {
+            return;
         }
+        console.log(chalk.green('İndirme işlemi tamamlandı'));
+        rimraf(directory + '/.git', function () {
+            console.log(chalk.green('Klasör hazırlandı'));
+        });
     });
 }
 
